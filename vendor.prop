@@ -20,7 +20,6 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM8250
 
 # Consumer IR
 ro.hardware.consumerir=kona
