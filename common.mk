@@ -299,8 +299,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/odm/,$(TARGET_COPY_OUT_ODM)/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/vendor/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/common/odm/,$(TARGET_COPY_OUT_ODM)/etc) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/common/vendor/,$(TARGET_COPY_OUT_VENDOR)/etc) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/$(TARGET_BOARD_PLATFORM)/vendor/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
